@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Annual & Monthly Weather in U.S. Cities</h1>
+    <p>View and compare weather patterns for Houston, New York City and Seattle. <br>
+        Select a city and/or month from the dropdowns. Hover over data for precise values.</p>
+    <div class="container" id="dataviz">
+
+    </div>
+
+    <div class="container" id="sidepanel">
+        <H5>Key</H5>
+        <ul type="square">
+            <li style="color:#ff99cc;">Houston</li>
+            <li style="color: #00cc99;">New York</li>
+            <li style="color: #0099ff">Seattle</li>
+        </ul>
+        <h5>Filter</h5>
+        <label for="categorySelect">City: </label>
+        <select class="custom-select" id="selectButton">
+            <option selected value="houston">Houston</option>
+            <option value="nyc">New York City</option>
+            <option value="seattle">Seattle</option>
+        </select>
+        <br />
+        <label for="monthSelect">Month: </label>
+        <select class="custom-select-month" id="selectButtonMonth">
+            <option selected value="all">All</option>
+            <option value="0">January</option>
+            <option value="1">February</option>
+            <option value="2">March</option>
+            <option value="3">April</option>
+            <option value="4">May</option>
+            <option value="5">June</option>
+            <option value="6">July</option>
+            <option value="7">August</option>
+            <option value="8">September</option>
+            <option value="9">October</option>
+            <option value="10">November</option>
+            <option value="11">December</option>
+
+        </select>
+    </div>
+
+</body>
+
+</html>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v5.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+
+<script src="./finalviz.js"></script>
